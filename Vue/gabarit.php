@@ -24,7 +24,7 @@
             <?= $contenu ?>
             <!-- #contenu -->
             <footer id="piedBlog">
-                <center><p class="footer">Site réalisé par Gwendoline, étudiante en BTS Services Informatique aux Organisations (SIO).</p></center>
+                <center><p class="footer">Site réalisé par Eponyia, gladiatrice 65 sur suthran.</p></center>
             </footer>
         </div> 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

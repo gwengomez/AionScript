@@ -9,10 +9,30 @@
             <span class="icon-bar"></span>
         </button>
         <!-- Lien de retour à la page d'accueil -->
-        <a class="titreEnTete" href="index.php">Chic Tendance</a>
+
+        <a class="navbar-brand" href="accueil/index">Aion Script</a>
     </div>
     <!-- Partie de la barre masquée en fonction de la zone d'affichage -->
     <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accueil du majordome <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="majordome">Les bases</a></li>
+                    <li><a href="majordome/personnalisation">Personnalisation du texte</a></li>
+                    <li><a href="majordome/modificationduson">Modification du son</a></li>
+                </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Musique <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="musique">Les notes</a></li>
+                    <li><a href="musique/tempo">Le tempo</a></li>
+                    <li><a href="musique/exemples">Quelques exemples</a></li>
+                </ul>
+            </li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php
             if (isset($client)) {
@@ -28,7 +48,7 @@
             } else {
                 ?>
                 <li><a class="enTete" href="connexion">Se Connecter</a></li>
-            <?php } ?>
+                <?php } ?>
         </ul>
     </div>
 </div>

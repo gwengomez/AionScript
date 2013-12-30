@@ -1,0 +1,36 @@
+body {
+    background: url("images/fond3.jpg")no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    /*padding-top: 12%;*/
+}
+
+.divAccueil {
+    text-align: center;
+    margin-left: 27%;
+    margin-right: 27%;
+}
+
+.imgAccueil {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.row {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 12%;
+}
+
+.row [class^="col-"] {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,28,.30);
+    color: black;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 50px;
+}
