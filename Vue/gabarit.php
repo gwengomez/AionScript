@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <base href="<?= $this->nettoyer($racineWeb) ?>" >
         <title><?= $this->nettoyer($titre) ?></title>
+        
+        <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" type="text/css" href="Contenu/design.css">
         <link rel="icon" type="image/png" href="Contenu/images/icone.png" />
@@ -13,13 +15,13 @@
         <link href="Librairies/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <?php require 'Vue/_Commun/barreNavigation.php'; ?>
     <body>
         <div id="global">
             <header>
                 <!--NAVBAR-->
-                <?php require 'Vue/_Commun/barreNavigation.php'; ?>
+                
                 <!--FIN NAVBAR-->
-             
 
             <?= $contenu ?>
             <!-- #contenu -->

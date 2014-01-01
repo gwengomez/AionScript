@@ -2,6 +2,8 @@
 
 <ul class="breadcrumb">
     <li><a class="filAriane" href="index.php">Accueil</a></li>
+    <li><a class="filAriane" href="majordome">Majordome</a></li>
+    <li class="active">Personnalisation du texte</li>
 </ul>
 
 <div class="row">

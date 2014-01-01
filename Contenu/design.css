@@ -1,8 +1,14 @@
 body {
-    background: url("images/fond3.jpg")no-repeat;
+    background: url("images/fond5.jpg")no-repeat;
+    background-color: rgb(139,180,184);
     background-attachment: fixed;
     background-size: 100%;
-    /*padding-top: 12%;*/
+    padding-top: 150px;
+}
+
+.filAriane {
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 21px;
 }
 
 .divAccueil {
@@ -14,13 +20,13 @@ body {
 .imgAccueil {
     width: 100%;
     border-radius: 15px;
+    border: 1px solid black;
 }
 
 .row {
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 40px;
-    padding-top: 12%;
 }
 
 .row [class^="col-"] {
@@ -28,7 +34,7 @@ body {
     padding-bottom: 30px;
     border: 1px solid black;
     border-radius: 15px;
-    background-color: rgba(0,0,28,.30);
+    background-color: rgba(48,103,110,.40);
     color: black;
     margin-left: 7%;
     margin-right: 7%;

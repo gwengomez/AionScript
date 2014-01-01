@@ -20,13 +20,13 @@
  }
  .breadcrumb>li+li:before{
      padding:0 5px;
-     color:#ffdead;
+     color:rgb(139,180,184);
      content:"/\00a0"
  }
  .breadcrumb>.active{
-     color: #faebd7;
-     font-family: 'Playball', cursive;
-     font-size: 16px;
+     color: rgb(89,141,147);
+     font-family: 'The Girl Next Door', cursive;
+     font-size: 21px;
  }
  
  .pagination{
