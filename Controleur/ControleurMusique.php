@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Controleur/ControleurPersonalise.php';
 require_once 'Framework/Controleur.php';
 
 class ControleurMusique extends Controleur {

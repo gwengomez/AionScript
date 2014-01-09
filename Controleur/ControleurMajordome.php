@@ -1,8 +1,8 @@
 <?php
-
+require_once 'Controleur/ControleurPersonalise.php';
 require_once 'Framework/Controleur.php';
 
-class ControleurMajordome extends Controleur {
+class ControleurMajordome extends ControleurPersonalise {
     
     public function __construct() {
         

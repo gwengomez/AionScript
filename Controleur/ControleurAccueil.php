@@ -1,8 +1,8 @@
 <?php
-
+require_once 'Controleur/ControleurPersonalise.php';
 require_once 'Framework/Controleur.php';
 
-class ControleurAccueil extends Controleur {
+class ControleurAccueil extends ControleurPersonalise {
     
     public function __construct() {
     }
