@@ -23,11 +23,11 @@ class ControleurConnexion extends ControleurPersonalise {
 
     public function connecter() {
         if ($this->requete->existeParametre("login") && $this->requete->existeParametre("mdp")) {
-            $courriel = $this->requete->getParametre("login");
+            $login = $this->requete->getParametre("login");
             $mdp = $this->requete->getParametre("mdp");
             
-            if ($this->client->connecter($courriel, $mdp)) {
-                $client = $this->client->getClient($courriel, $mdp);
+            if ($this->client->connecter($login, $mdp)) {
+                $client = $this->client->getClient($login, $mdp);
                 $this->requete->getSession()->setAttribut("idClient", $client['CLIE_ID']);
                 $this->requete->getSession()->setAttribut("loginClient", $client['CLIE_LOGIN']);
                 $this->requete->getSession()->setAttribut("mdpClient", $client['CLIE_MDP']);
@@ -40,6 +40,7 @@ class ControleurConnexion extends ControleurPersonalise {
             throw new Exception("Action impossible : login ou mot de passe non défini");
     }
     
+
     public function inscription()
     {
        if ($this->requete->existeParametre("nom") && $this->requete->existeParametre("prenom") && $this->requete->existeParametre("adresse") && $this->requete->existeParametre("cp") && $this->requete->existeParametre("ville") && $this->requete->existeParametre("courriel") && $this->requete->existeParametre("mdp")) {
@@ -56,8 +57,8 @@ class ControleurConnexion extends ControleurPersonalise {
                
                 $this->client->ajoutClient($nom, $prenom, $adresse, $cp, $ville, $courriel, $mdp);
 
-                if ($this->client->connecter($courriel, $mdp)) {
-                     $client = $this->client->getClient($courriel, $mdp);
+                if ($this->client->connecter($login, $mdp)) {
+                     $client = $this->client->getClient($login, $mdp);
                      $this->requete->getSession()->setAttribut("idClient", $client['CLIE_ID']);
                      $this->requete->getSession()->setAttribut("loginClient", $client['CLIE_LOGIN']);
                      $this->requete->getSession()->setAttribut("mdpClient", $client['CLIE_MDP']);
