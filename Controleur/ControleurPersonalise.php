@@ -1,7 +1,6 @@
 <?php
 require_once 'Framework/Controleur.php';
 
-
 /**
  * Classe parente des contrôleurs soumis à authentification
  *

@@ -30,6 +30,7 @@ USE `aionscript`;
 
 CREATE TABLE IF NOT EXISTS `t_client` (
   `CLIE_ID` int(3) NOT NULL AUTO_INCREMENT,
+  `CLIE_LOGIN` varchar(50) NOT NULL UNIQUE,
   `CLIE_NOM` varchar(50) NOT NULL,
   `CLIE_PRENOM` varchar(50) NOT NULL,
   `CLIE_ADRESSE` varchar(50) NOT NULL,

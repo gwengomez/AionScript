@@ -43,7 +43,8 @@ class ControleurConnexion extends ControleurPersonalise {
 
     public function inscription()
     {
-       if ($this->requete->existeParametre("nom") && $this->requete->existeParametre("prenom") && $this->requete->existeParametre("adresse") && $this->requete->existeParametre("cp") && $this->requete->existeParametre("ville") && $this->requete->existeParametre("courriel") && $this->requete->existeParametre("mdp")) {
+       if ($this->requete->existeParametre("login") && $this->requete->existeParametre("nom") && $this->requete->existeParametre("prenom") && $this->requete->existeParametre("adresse") && $this->requete->existeParametre("cp") && $this->requete->existeParametre("ville") && $this->requete->existeParametre("courriel") && $this->requete->existeParametre("mdp")) {
+           $login = $this->requete->getParametre("login");
            $nom = $this->requete->getParametre("nom");
            $prenom = $this->requete->getParametre("prenom");
            $adresse = $this->requete->getParametre("adresse");
@@ -51,11 +52,10 @@ class ControleurConnexion extends ControleurPersonalise {
            $ville = $this->requete->getParametre("ville");
            $courriel = $this->requete->getParametre("courriel");
            $mdp = $this->requete->getParametre("mdp");
-           $styles = $this->style->getStyles();
            
-           if (!$this->client->existeCourriel($courriel)) {
+           if (!$this->client->existeCourrielLogin($courriel, $login)) {
                
-                $this->client->ajoutClient($nom, $prenom, $adresse, $cp, $ville, $courriel, $mdp);
+                $this->client->ajoutClient($login, $nom, $prenom, $adresse, $cp, $ville, $courriel, $mdp);
 
                 if ($this->client->connecter($login, $mdp)) {
                      $client = $this->client->getClient($login, $mdp);

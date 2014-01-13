@@ -23,7 +23,7 @@ $this->titre = "Connexion";
                 }
                 ?>
                 <form class="form-signin form-horizontal" role="form" action="connexion/connecter" method="post">
-                    <input name="courriel" type="email" class="form-control" placeholder="Entrez votre courriel : " value="eponia22@gmail.com" required autofocus><br />
+                    <input name="login" type="text" class="form-control" placeholder="Entrez votre courriel : " value="epo" required autofocus><br />
                     <input name="mdp" type="password" class="form-control" placeholder="Entrez votre mot de passe : " value="123" required><br />
                     <button type="submit" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-log-in"></span> Connexion</button>
                 </form>
@@ -44,6 +44,7 @@ $this->titre = "Connexion";
                     <p><label>Code postal<span class="obligatoire">*</span> : </label></p><input name="cp" type="text" class="form-control" required><br />
                     <p><label>Ville<span class="obligatoire">*</span> : </label></p><input name="ville" type="text" class="form-control" required><br />
                     <p><label>Courriel<span class="obligatoire">*</span> : </label></p><input name="courriel" type="email" class="form-control" required><br />
+                    <p><label>Login<span class="obligatoire">*</span> : </label></p><input name="login" type="text" class="form-control" required><br />
                     <p><label>Mot de passe<span class="obligatoire">*</span> : </label></p><input name="mdp" type="password" class="form-control" required><br />
                     <br /><button type="submit" class="btn btn-default"> Inscription</button>
                     <br /><p class="obligatoire"><span >Les champs suivi de * sont obligatoires.</span></p>
